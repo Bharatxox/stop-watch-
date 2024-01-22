@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #c3073f;
+}
+.stopWatch{
+    height: 600px;
+    width: 600px;
+    background: #0b0a0a;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+h2{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.time{
+    height: 220px;
+    width: 220px;
+    background: #1a1a1d;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 15px #c3073f;
+}
+.button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+button{
+    border-style: none;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1a1a1d;
+    cursor: pointer;
+}
+button i{
+    font-size: 18px;
+    color: #c3073f;
+}
+hr{
+    /* background-color: #1a1a1d;  */
+    border: 2px solid #1a1a1d;
+}
+.lapList{
+    width: 100%;
+    list-style: none;
+    padding:  0px 25px 25px;
+    overflow-y: scroll;
+    max-height: 148px;
+}
+.lapList::-webkit-scrollbar{
+    display: none;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 5px;
+    /* gap: 40px; */
+    margin-bottom: 10px;
+}
+.heading div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lapItem{
+    width: 100%;
+    /* padding: 5px 50px; */
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.473);
+
+}
+strong{
+    color: #c3073f;
+}
+.lapItemChild{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 50px;
+}

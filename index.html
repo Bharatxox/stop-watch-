@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Lap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="stopWatch">
+        <h2>stopwatch</h2>
+        <h1 class="time">
+            <span id="hour"></span><span id="min">00</span>:<span id="sec">00</span>:<span id="ms">00</span>
+        </h1>
+        <div class="button">
+            <button id="start"><i class="fa-solid fa-play"></i></button>
+            <button id="stop"><i class="fa-solid fa-pause"></i></button>
+            <button id="reset"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="lap"><i class="fa-solid fa-flag"></i></button>
+        </div>
+        <div class="heading">
+            <div class="lap"></div>
+            <div class="lapTotal"></div>
+            <div class="total"></div>
+            
+        </div>
+        <ul class="lapList">
+            <!-- Lap data will be appended here dynamically -->
+            
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c44b97502.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
